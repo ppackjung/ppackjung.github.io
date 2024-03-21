@@ -1,0 +1,9 @@
+.wrapper {
+  width:100vw;
+  font-size:14px;
+  display:flex;
+  justify-content: center;
+  background-color: #eee;
+  height:calc( var(--vh, 1vh) * 100);
+}
+button {padding:5px 10px;border:1px solid #000;background-color:transparent;border-radius:4px;font-weight:700;}
