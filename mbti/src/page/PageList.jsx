@@ -21,12 +21,15 @@ function PageList({page, questionList , handleCkAnswer}) {
                             </div>
                             <div className="a_area">
                                 {val.a.map((aval, aidx) => 
-                                    <button key={aidx} 
-                                        onClick={
-                                            () => handleCkAnswer(aval.type,idx)
-                                        }>
-                                        {aval.text}
-                                    </button>
+                                    <>
+                                        <input type="radio" id={aidx} key={aidx} />
+                                        <label htmlFor={aidx} key={aidx} 
+                                            onClick={
+                                                () => handleCkAnswer(aval.type,idx)
+                                            }>
+                                            {aval.text}
+                                        </label>
+                                    </>
                                 )}
                             </div>
                     </div>
